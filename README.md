@@ -43,6 +43,29 @@ The back-end is responsible for handling business logic and database interaction
   - **Authentication**: Manages user sign-up, login, and authorization using hashed passwords.
 
 
+
+
+
+### Database
+The user database is stored along with restaurants food and drinks items. The user order and their details is also entertained
+
+- **Technologies Used**:  MsSQL 
+- **Components**:
+  - **User Table**: it contains user name,age,gender and password for account registeration.
+  - **Product Table**: It contains the details about each Product like their name,pricing and image paths.
+  - **Order Table**: It contains the user Id and the total user purchase and order id.
+  - **Order Details table**: It contains the order ID and Product ID and Product's quantities.
+
+
+### Business Logic
+The core idea behind the storing database is to claulate the restaurant's revenue generated in given days.
+  - **Employee table**: Employee Table conatins its details along with its salary. 
+  - **Revenue Calculation**: The profit from the Product and the Employee salary was used to Calculate the total revenue generated.
+  
+  ### Entity-Relationship Diagram
+  palce pics here
+
+
 ## Usage
 Follow these steps to set up and run the online food ordering system locally.
 
