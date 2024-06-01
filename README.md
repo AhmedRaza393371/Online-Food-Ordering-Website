@@ -5,6 +5,11 @@
 
 The Online Food Ordering System is a web application that allows users to order food from local restaurants. Users can selct food and drink items, place orders. The system includes user authentication, order management, and the user Information is stored in SQL Server Management Studio.
 
+<img width="926" alt="pic1" src="https://github.com/AhmedRaza393371/Online-Food-Ordering-Website/assets/145160224/721188dd-a82c-44e1-9c86-7df969783298">
+<img width="934" alt="pic2" src="https://github.com/AhmedRaza393371/Online-Food-Ordering-Website/assets/145160224/e0b9c3ec-c6f7-4a3e-895a-2745dc65aefd">
+<img width="928" alt="pic3" src="https://github.com/AhmedRaza393371/Online-Food-Ordering-Website/assets/145160224/927f514a-3baf-480a-a661-3442fb340766">
+<img width="935" alt="pic4" src="https://github.com/AhmedRaza393371/Online-Food-Ordering-Website/assets/145160224/9c10db3b-301e-49cc-a2ea-642d4883c8ce">
+
 
 ## Contents:
 
@@ -73,6 +78,9 @@ Follow these steps to set up and run the online food ordering system locally.
 - **HTML** and **CSS** and **JavaScript** (for front-end)
 - **Python** and **Django** (for Python back-end)
 - **Database Server** (MsSQL)
+
+### Demo Video
+
    
    
 ## Contributing:
