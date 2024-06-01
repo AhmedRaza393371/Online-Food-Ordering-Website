@@ -78,10 +78,7 @@ Follow these steps to set up and run the online food ordering system locally.
 - **HTML** and **CSS** and **JavaScript** (for front-end)
 - **Python** and **Django** (for Python back-end)
 - **Database Server** (MsSQL)
-
-### Demo Video
-
-   
+ 
    
 ## Contributing:
 
