@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    background-image: url('/static/review-pic.jpg');
+    background-size: cover;
+}
+
+header {
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.navbar a:hover {
+    background-color: #555;
+}
+
+.navbar .logout {
+    float: right;
+}
+
+.reviews {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Center the reviews */
+    align-items: center; /* Align items vertically */
+}
+
+.review {
+    width: calc(33.333% - 20px); /* Three reviews per row */
+    background-color: #fff;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content within each review */
+}
+
+.review img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.review h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.review p {
+    font-size: 1rem;
+    color: #333;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/hompage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome for icons -->
+    <title>My Homepage</title>
+    <style>
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Navbar styles */
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .navbar a:hover {
+            background-color: #555;
+        }
+
+        .navbar .logout {
+            float: right;
+        }
+
+        .navbar .user-name {
+            float: right;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* footer */
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+        }
+
+        .footer .social-icons {
+            margin-bottom: 10px;
+        }
+
+        .footer .social-icons a {
+            color: #fff;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+
+        .footer .social-icons a:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="/landing/">Home</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+        <a href="/view_cart/">My Cart</a>
+        <a href="/review/">Customer's Review</a>
+        <a class="logout" href="/logout/"><i class="fas fa-sign-out-alt"></i> Logout</a>
+        {% if username %}
+        <span class="user-name">{{ username }}</span>
+        {% endif %}
+    </div>
+    <header>
+        <h1 style="color:black">Welcome to 
+            <img src="/static/shahjii.png" class="restaurant-logo" alt="restaurant-logo"> FoodZone
+        </h1>
+    </header>
+    <main class="main">
+        <div class="food-items">
+            {% for product in products %}
+            <div class="food-item">
+                <img src="{{ product.image_path }}" alt="{{ product.productname }}">
+                <h2>{{ product.productname }}</h2>
+                <p class="price">${{ product.prdouctprice }}</p>
+                <p class="description">{{ product.productdesc }}</p>
+                <form method="post" action="{% url 'add_to_cart' %}">
+                    {% csrf_token %}
+                    <input type="hidden" name="product_id" value="{{ product.productid }}">
+                    <input type="number" name="quantity" value="1" min="1" required>
+                    <button type="submit" class="order-btn">Add to Cart</button>
+                </form>
+            </div>
+            {% endfor %}
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+            <a href="https://twitter.com/" class="fab fa-twitter"></a>
+            <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+            <a href="https://www.linkedin.com/" class="fab fa-linkedin-in"></a>
+        </div>
+        <p>&copy; 2024 Food Order Website</p>
+    </footer>
+</body>
+</html>

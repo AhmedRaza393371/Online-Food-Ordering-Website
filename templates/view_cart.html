@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart</title>
+    <link rel="stylesheet" href="/static/cart.css">
+</head>
+<body>
+    <div class="container">
+        <h1>My Cart</h1>
+        <ul class="cart-items">
+        {% for cart_item in cart_items %}
+            <li>{{ cart_item.product.productname }} - Quantity: {{ cart_item.quantity }}</li>
+        {% endfor %}
+        </ul>
+        <div class="buttons">
+            <form method="post" action="{% url 'confirm_order' %}">
+                {% csrf_token %}
+                <button type="submit" class="btn confirm-btn">Confirm Order</button>
+            </form>
+
+            <form action="{% url 'clear_cart' %}" method="post">
+                {% csrf_token %}
+                <button type="submit" class="btn clear-btn">Clear Cart</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('/static/back3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.navbar a:hover {
+    background-color: #555;
+}
+
+.navbar .logout {
+    float: right;
+}
+
+/* Hero section styles */
+.hero {
+    text-align: center;
+    padding: 100px 40px;
+    color: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #19231A;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: bolder;
+}
+
+.cta-btn {
+    padding: 15px 30px;
+    background-color: #FFA500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+    background-color: #FF8C00;
+}
+
+/* Stylish text */
+.stylish-text {
+    font-size: 2em;
+    color: #FFA500;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: auto;
+}
+
+/* Messages styles */
+ul.messages {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.messages li {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+ul.messages li.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}

@@ -1,0 +1,61 @@
+/* Add your CSS styles here */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    /* Set background image */
+    background-image: url('/static/Navigation\ Background.jpg');
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="number"], input[type="password"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%; /* Make the text fields span the entire width of the container */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%; /* Make the button span the entire width of the container */
+    margin-top: 10px; /* Add margin-top to create space */
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+a{
+    text-decoration: none;
+}

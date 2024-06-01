@@ -1,0 +1,108 @@
+[{
+    "id":1,
+    "name":"Burger",
+    "price":10,
+    "desc":"A classic choice, perfect for a quick and satisfying meal.",
+    "image":"/static/dish-1.png"
+  
+
+},
+{
+    "id":2,
+    "name":"Pasta",
+    "price":10,
+    "desc":" Indulge in a delicious bowl of pasta, a comforting and hearty dish.",
+    "image":"/static/menu-1.jpg"
+ 
+
+
+},
+{
+    "id":3,
+    "name":"White Sauce",
+    "price":10,
+    "desc":"Creamy and flavorful, this pasta sauce adds richness to any dish.",
+    "image":"/static/White-Sauce-Pasta.jpg"
+
+},
+{
+    "id":4,
+    "name":"Orange juice",
+    "price":10,
+    "desc":" Refreshing and tangy, a burst of citrus goodness in every sip.",
+    "image":"/static/menu-9.jpg"
+
+},
+{
+    "id":5,
+    "name":"Gusto Organic Drinks",
+    "price":10,
+    "desc":"Sip on nature's goodness with these organic and rejuvenating beverages.",
+    "image":"/static/gusto.jpg"
+  
+
+},
+
+{
+    "id":6,
+    "name":"Mocktail",
+    "price":88,
+    "desc":"Enjoy a non-alcoholic cocktail, a refreshing blend of flavors without the buzz.",
+    "image":"/static/mocktail1.png"
+   
+
+},
+{
+    "id":7,
+    "name":"fried Chickens",
+    "price":10,
+    "desc":"Crispy and flavorful, these fried chicken pieces are an irresistible treat.",
+    "image":"/static/dish-6.png"
+
+
+},
+{
+    "id":8,
+    "name":"Chicken Piece",
+    "price":88,
+    "desc":"Tender and succulent, a perfect protein-packed meal option.",
+    "image":"/static/dish-3.png"
+   
+
+},
+
+
+{
+    "id":9,
+    "name":"Nuggets",
+    "price":88,
+    "desc":"Bite-sized and crunchy, these nuggets are a fun and tasty snack for all ages.",
+    "image":"/static/dish-2.png"
+   
+
+},
+{
+    "id":10,
+    "name":"Coca Cola",
+    "price":88,
+    "desc":"The classic cola flavor, fizzy and refreshing, perfect for any occasion.",
+    "image":"/static/coca.jpg"
+   
+
+},
+{
+    "id":11,
+    "name":"Juices",
+    "price":88,
+    "desc":"A variety of refreshing and nutritious fruit juices to quench your thirst.",
+    "image":"/static/juice.jpeg"
+},
+{
+    "id":12,
+    "name":"Mix Juices",
+    "price":88,
+    "desc":"Enjoy a blend of different fruits, packed with vitamins and antioxidants for a healthy boost.",
+    "image":"/static/healthy-juices.jpg"
+}
+
+]
